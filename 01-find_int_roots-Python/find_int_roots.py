@@ -10,8 +10,15 @@ import math
 def fun_find_int_roots(a, b, c):
 	determinant = (b*b)-(4*a*c)
 	sqroot = math.sqrt(determinant)
-	x1 = (-b+sqroot) / (2*a)
-	x2 = (-b-sqroot) / (2*a)
-	return x1, x2
+	if determinant>0:
+		x1 = (-b+sqroot) / (2*a)
+		x2 = (-b-sqroot) / (2*a)
+		return x1, x2
+	elif determinant == 0:
+		x1 = (-b+sqroot) / (2*a)
+		x2 = (-b-sqroot) / (2*a)
+		return x1, x2
+    	
+
 
 
