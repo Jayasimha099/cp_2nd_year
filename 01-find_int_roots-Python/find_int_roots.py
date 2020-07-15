@@ -8,8 +8,10 @@
 
 import math
 def fun_find_int_roots(a, b, c):
-	x1 = (b**2 + (4*a*c)**0.5)/2
-	x2 = (b**2 - (4*a*c)**0.5)/2
+	determinant = (b*b)-(4*a*c)
+	sqroot = math.sqrt(determinant)
+	x1 = (-b+sqroot) / (2*a)
+	x2 = (-b-sqroot) / (2*a)
 	return x1, x2
 
 
