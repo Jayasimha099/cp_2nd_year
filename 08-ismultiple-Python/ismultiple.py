@@ -7,3 +7,11 @@
 
 def fun_ismultiple(m, n):
 	return False # replace with your solution
+	if (m == 0 and n == 0) or (m==0 and n!=0):
+		return True
+	if (m!=0 or n==0):
+		return False
+	elif (m%n == 0):
+    	 return True
+	return False
+    	
