@@ -22,4 +22,5 @@ def dicetoorderedhand(a, b, c):
 	s=""
 	while i<len(descend):
 		s=s+str(i)
+	
 	return s
