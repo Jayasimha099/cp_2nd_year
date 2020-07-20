@@ -6,4 +6,7 @@
 
 def fun_eggcartons(eggs):
 	# your code goes here
-	return 1
+	for egg in range(0,eggs+1):
+    		if eggs <= (12*egg):
+    				return egg
+	
