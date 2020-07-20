@@ -11,3 +11,12 @@
 def gcd(m, n):
 	# your code goes here
 	pass
+	if n == 0:
+		return m
+	
+	x = n
+	y = m%n
+
+	while(b)>0:
+		x,y = y,x%y
+	return x
