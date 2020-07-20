@@ -7,18 +7,16 @@
 # return root1, root2
 
 import math
+from math import sqrt
 def fun_find_int_roots(a, b, c):
-	determinant = (b*b)-(4*a*c)
-	sqroot = math.sqrt(determinant)
-	if determinant>0:
-		x1 = (-b+sqroot) / (2*a)
-		x2 = (-b-sqroot) / (2*a)
-		return x1, x2
-	elif determinant == 0:
-		x1 = (-b+sqroot) / (2*a)
-		x2 = (-b-sqroot) / (2*a)
-		return x1, x2
-    	
+	determinant = int((b*b)-(4*a*c))
+	sqroot = sqrt(determinant)	
+	x1 = int((-b+sqroot) / (2*a))
+	x2 = int((-b-sqroot) / (2*a))
+	
+	if x1>x2:
+    		return x2,x1
+	return x1,x2	
 
 
 
