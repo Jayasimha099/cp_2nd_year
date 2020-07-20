@@ -14,13 +14,14 @@
 def dicetoorderedhand(a, b, c):
 	# your code goes here
 	pass
-	descend = []
-	descend.append(a)
-	descend.append(b)
-	descend.append(c)
-	descend.sort(reverse = True)
-	s=""
-	while i<len(descend):
-		s=s+str(i)
+	l = max(a,b,c)
+	m = min(a,b,c)
+	if(a<l and a>m) or a==(c or l or m or b):
+    		return l*100 + a*10 +m
 	
-	return s
+	if b<l and b>m:
+    		return l*100 + b*10 + m
+	
+	if c<l and c>m:
+    		return l*100+ c*10 +m
+	
