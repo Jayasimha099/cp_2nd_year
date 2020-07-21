@@ -7,3 +7,11 @@
 def smallestdifference(a):
 	# Your code goes here
 	pass
+	if a == []:
+		return -1
+	a.sort()
+	temp = a[len(a)-1]
+	for i in range(len(a)-1):
+		if abs(a[i]-a[i+1])<temp : 
+			temp = abs(a[i]-a[i+1])
+	return temp
