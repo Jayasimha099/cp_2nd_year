@@ -11,3 +11,11 @@
 def inverselookandsay(a):
 	# Your code goes here
 	pass
+	lis = []
+	try:
+		for i in a:
+			for j in range(i[0]):
+				lis.append(i[1])
+		return lis
+	except:
+		return []
