@@ -16,3 +16,9 @@
 def ismostlymagicsquare(a):
 	# Your code goes here
 	pass
+	y = sum(a[0])
+	for i in a:
+		if sum(i) != y:
+				return False
+	return True
+
