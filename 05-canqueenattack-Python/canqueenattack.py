@@ -6,3 +6,4 @@
 def canqueenattack(qR, qC, oR, oC):
 	# Your code goes here
 	pass
+	return (qR == oR) or (qC == oC) or (abs(qR-oR)-abs(qC-oC) == 0) 
