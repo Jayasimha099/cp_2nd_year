@@ -10,5 +10,17 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
+	m = s.split(",")
+	lis = []
+	print(m)
+	for i in m:
+		try:
+			lis.append(int(i))
+		except ValueError:
+			continue
+	print(len(lis))
+	
+	return sum(lis)/len(lis) if len(lis) != 0 else 0
+
+	
 
